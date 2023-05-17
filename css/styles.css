@@ -6,17 +6,17 @@
   display: flex;
   position: fixed;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 .con1{
   text-align: center;
+  line-height: 250%;
   font-size: 20px;
-  color: aliceblue;
+  color:#CCFF00;
   padding-bottom: 150px;
 }
 .b11{
   justify-content: center;
-
 }
 .b1{
 height: 80px;
@@ -33,6 +33,7 @@ border: 2px;
 margin: 10px;
 }
 .hero{
+  background: -moz-linear-gradient(left center, transparent, white) repeat scroll 0 0 transparent;
     display: flex;
     height: 100vh;
     width: auto;
