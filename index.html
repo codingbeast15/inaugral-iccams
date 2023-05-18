@@ -26,6 +26,7 @@
         </style>
     </head>
     <body>
+        <audio id="audio" src="./assets/explosion-129711.mp3"></audio>
         <video autoplay loop muted plays-inline class="vid1">
             <source src="./assets/iccamsss.mp4" type="video/mp4">
         </video>
@@ -34,7 +35,7 @@
                     <h2>PRESIDENCY UNIVERSITY<BR>SCHOOL OF<BR>
                         COMPUTER SCIENCE & ENGINEERING AND INFORMATION SCIENCE</h2>
                 </div>
-               <div class="b11"><a href="javascript:setTimeout(()=>{window.location = 'https://ieeepresidency-ic3ams.com/ ' },3000);"><button class="b1" onclick="dropConfetti()">Reveal Website</button></a></div> 
+               <div class="b11"><a href="javascript:setTimeout(()=>{window.location = 'https://ieeepresidency-ic3ams.com/ ' },3000);"><button class="b1" onclick="dropConfetti(); play();" >Reveal Website</button></a></div> 
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
@@ -62,6 +63,10 @@
                     document.body.removeChild(canvas);
                 }, 8000); // Adjust the duration (in milliseconds) the confetti will fall before clearing the canvas
             }
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+              }
         </script>
     </body>
 </html>
